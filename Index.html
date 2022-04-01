@@ -8,17 +8,21 @@
         <Title>Homepage</Title>
     </head>
     <body>
-        <div id="header"> </div>
-
-
-
-        <div id="footer"></div>
+        <div id="headerDiv"> </div>
+        <button onclick="LoadHeaderFooter()">reload</button>
+        
+        <div id="footerDiv"></div>
     </body>
 
     <script>
         function LoadHeaderFooter()
         {
-
+            var client = new XMLHttpRequest();
+            client.open('GET', './Header_Footer/Header.html');
+            client.onreadystatechange = function() {
+                document.getElementById("headerDiv")=client.responseText;
+            }
+            client.send();
         }
     </script>
 </html>
