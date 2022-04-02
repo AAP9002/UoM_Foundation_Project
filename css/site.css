@@ -1,3 +1,17 @@
 body{
     background-color: #f6f6f6;
 }
+
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: gray;
+}
+
+.imageBanner{
+    position:absolute;
+    top:0px;
+    z-index: -1;
+    min-height: 450px;
+}

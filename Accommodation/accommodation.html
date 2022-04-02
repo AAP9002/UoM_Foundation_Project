@@ -7,8 +7,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <link href="./css/site.css" rel="stylesheet" />
-    <link href="./css/Homepage/homepage.css" rel="stylesheet" />
+    <link href="../css/site.css" rel="stylesheet" />
+    <link href="../css/accommodation/accommodation_styles.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <Title>Homepage</Title>
@@ -17,11 +17,11 @@
 <body>
     <div class="d-flex container" style="background-color: #6b2c91; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; padding: 10px;opacity:90%;">
         <div class="w-25">
-            <img style="height:75px;" src="Images\Manchester Univerity Logo.png"/>
+            <img style="height:75px;" src="../Images/Manchester Univerity Logo.png"/>
         </div>
         <header class="justify-content-center py-3 w-50">
           <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="../Index.html" class="nav-link" aria-current="page">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Experiance</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Infomation</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Study</a></li>
@@ -32,15 +32,32 @@
         <div class="w-25" style="color: white; "><h3> Foundation Computer Science</h1></div>
     </div>
 
-    <img class="w-100" style="position:absolute;top:0px; z-index: -1;" src="https://i0.wp.com/unifresher.co.uk/wp-content/uploads/2021/02/Copy-of-Feature-images-2021-02-15T101124.859.png?resize=1920%2C768&ssl=1"/>
+    <img class="w-100 imageBanner" src="https://i0.wp.com/unifresher.co.uk/wp-content/uploads/2021/02/Copy-of-Feature-images-2021-02-15T101124.859.png?resize=1920%2C768&ssl=1"/>
     <centre>
-    <div class="container" style="padding-top:100px;">
+    <div class="container TextOverlay" style="padding-top:100px;">
         <h1>Accomodation</h1>
         <p>Finding the best place for you</p>
     </div>
+    <div class="d-flex container justify-content-center SectionSelection">
+        <button class="btn">Location</button>
+        <button class="btn">Halls</button>
+        <button class="btn">Private</button>
+        <button class="btn">What To Exspect</button>
+    </div>
 </centre>
-    <div class="d-flex container justify-content-center" style="padding-top:100px;">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1PobVFQRltWnLWP3OuZXbSRQV518uSOMF&ehbc=2E312F" width="640" height="480"></iframe>
+    <div class="d-flex container" style="margin-bottom: 25px;margin-top: 300px;">
+        <div class="w-50" style="padding: 25px;">
+            <h1>Location</h1>
+        </div>
+        <iframe class="w-50" src="https://www.google.com/maps/d/embed?mid=1PobVFQRltWnLWP3OuZXbSRQV518uSOMF&ehbc=2E312F" width="640" height="480"></iframe>
+    </div>
+    <div style="background-color:lightgray;">
+        <div class="container d-flex">
+        <img class="w-50" style="padding: 25px;" src="https://www.reading.ac.uk/discover/-/media/discover/images/tiles/carousel-tiles/ready-to-study/accommodation-study-abroad-intro.jpg"/>
+        <div class="w-50" style="padding: 25px;"></div>
+            <h1>Halls</h1>
+        </div>
+    </div>
     </div>
     <div id="footerDiv"></div>
 </body>
