@@ -14,4 +14,19 @@ body{
     top:0px;
     z-index: -1;
     min-height: 450px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.blurBackground{
+    filter:blur(3px);
+    -o-filter:blur(3px);
+    -ms-filter:blur(3px);
+    -moz-filter:blur(3px);
+    -webkit-filter:blur(3px);
+}
+
+.footer{
+    background-color: #6b2c91;
+    margin-top: 20px;
+    color: whitesmoke;
 }
