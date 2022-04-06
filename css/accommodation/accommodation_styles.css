@@ -5,6 +5,11 @@
 
 .SectionSelection{
     padding: 30px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    flex-wrap: wrap;
 }
 
 .SectionSelection button{
@@ -12,4 +17,6 @@
     background-color: rgb(89, 80, 214);
     border-radius: 50px;
     color: whitesmoke;
+    min-width: 15ex;
+    width:15ex;
 }
