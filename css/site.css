@@ -14,7 +14,8 @@ body{
     top:0px;
     z-index: -1;
     min-height: 450px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px rgba(0, 0, 0, 0.5);
+    object-fit:cover;
 }
 
 .blurBackground{
