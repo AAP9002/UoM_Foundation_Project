@@ -16,3 +16,31 @@
     background-color: black;
     opacity: 90%;
 }
+
+.topSection{
+    scroll-margin-top: 100px;
+    padding: 25px;
+    background-color: #f6f6f6;
+    opacity: 80%;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+.topSection h1{
+    text-align: center;
+}
+
+.sections{
+    scroll-margin-top: 100px;
+    padding: 25px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+.sections h1{
+    text-align: center;
+}
+
+.sections img{
+    min-width: 400px;
+}
