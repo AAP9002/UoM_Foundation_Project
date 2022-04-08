@@ -1,7 +1,8 @@
 .TextOverlay{
-    color: whitesmoke;
-    padding-left: 25px;
     padding-bottom: 25px;;
+    padding-top:100px;
+    color:white;
+    text-align: center;
     }
 
 .SectionSelection{
