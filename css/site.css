@@ -1,14 +1,19 @@
+/*Shared Site Css*/
 body{
+    /*background of whole site*/
     background-color: #f6f6f6;
 }
 
+/*top nav bar Start*/
 .nav-link{
     color: white;
 }
 .nav-link:hover{
     color: gray;
 }
+/*top nav bar End*/
 
+/*Imagebanner with text overlay start*/
 .imageBanner{
     position:absolute;
     top:0px;
@@ -26,6 +31,14 @@ body{
     -webkit-filter:blur(3px);
 }
 
+.TextOverlay{
+    padding-bottom: 25px;;
+    padding-top:100px;
+    color:white;
+    text-align: center;
+    }
+/*Imagebanner with text overlay end*/
+
 .footer{
     background-color: #6b2c91;
     margin-top: 20px;
@@ -33,13 +46,7 @@ body{
 }
 
 /*Acomodation CSS - Alan*/
-.TextOverlay{
-    padding-bottom: 25px;;
-    padding-top:100px;
-    color:white;
-    text-align: center;
-    }
-
+/*Secondary Navbar start*/
 .SectionSelection{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -65,7 +72,8 @@ body{
 .topSection h1{
     text-align: center;
 }
-
+/*Secondary Navbar end*/
+/*Sections of infomation start*/
 .sections{
     scroll-margin-top: 100px;
     padding: 25px;
@@ -84,3 +92,4 @@ body{
 .sections div{
     padding: 25px
 }
+/*Sections of infomation end*/
