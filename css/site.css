@@ -4,6 +4,29 @@ body{
     background-color: #f6f6f6;
 }
 
+h1{
+    -webkit-font-smoothing: antialised;
+    margin: 0 auto .5rem;
+    color: var(--theme-text);
+    word-break: break-word;
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 1.1875;
+    letter-spacing: -.8px;
+}
+
+p,u{
+    color: var(--theme-text);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.333;
+    letter-spacing: -.2px;
+    margin-top: 0;
+}
+
 /*top nav bar Start*/
 .nav-link{
     color: white;
@@ -42,7 +65,9 @@ body{
 .footer{
     background-color: #6b2c91;
     margin-top: 20px;
+    width:100%;
     color: whitesmoke;
+    bottom: 0;
 }
 
 /*Acomodation CSS - Alan*/
