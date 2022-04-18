@@ -1,4 +1,8 @@
 /*Shared Site Css*/
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     /*background of whole site*/
     background-color: #f6f6f6;
@@ -62,7 +66,7 @@ navMenu{
     color: white;
 }
 .nav-link:hover{
-    color: gray;
+    color: #eeeeeedc;
 }
 
 .logo{
@@ -136,7 +140,7 @@ navMenu{
 /*Secondary Navbar end*/
 /*Sections of infomation start*/
 .sections{
-    scroll-margin-top: 100px;
+    scroll-margin-top: 150px;
     padding: 25px;
     margin-bottom: 25px;
     margin-top: 50px;
@@ -166,13 +170,31 @@ splitContainer img{
     width: 50%;
 }
 
+@media only screen and (max-width: 1000px){
+    splitContainer{
+        display: block;
+    }
+    splitContainer div, splitContainer img{
+        width: 100%;
+    }
+      }
+
 /*Sections of infomation end*/
 
-@media only screen and (max-width: 1000px){
-splitContainer{
-    display: block;
+/*Alan Specific start*/
+privateAccomodationCompany{
+    display:flex;
 }
-splitContainer div, splitContainer img{
-    width: 100%;
+privateAccomodationCompany img{
+    height: 50px;
+    max-width: 180px;
 }
-  }
+privateAccomodationCompany button{
+    margin:20px;
+    width: 100px;
+}
+
+privateAccomodationCompany button a{
+    color: white;
+}
+/*Alan Specific end*/
