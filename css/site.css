@@ -33,6 +33,14 @@ iframe {
 }
 
 /*top nav bar Start*/
+.header{
+    background-color: #6b2c91;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 10px;
+    opacity:90%;
+}
+
 toggle{
     display: none;
 }
@@ -60,6 +68,8 @@ navMenu{
 .logo{
     min-width: 170px;
 }
+
+
 /*top nav bar End*/
 
 /*Imagebanner with text overlay start*/
