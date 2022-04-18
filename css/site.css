@@ -33,11 +33,32 @@ iframe {
 }
 
 /*top nav bar Start*/
+toggle{
+    display: none;
+}
+navMenu{
+    min-width: 600px;
+}
+
+@media only screen and (max-width: 1000px){
+    toggle{
+        display: block;
+    }
+
+    navMenu{
+        display:none;
+    }
+}
+
 .nav-link{
     color: white;
 }
 .nav-link:hover{
     color: gray;
+}
+
+.logo{
+    min-width: 170px;
 }
 /*top nav bar End*/
 
