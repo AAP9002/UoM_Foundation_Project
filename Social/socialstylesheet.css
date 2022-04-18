@@ -1,11 +1,106 @@
 .intro {
-    background-color: #f4ede4;
+    background-color: #feefec;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    max-width: none;
+    margin: 0 auto;
 }
 
 .introContent {
-    display: grid;
-    grid-column-gap: 5%;
-    grid-template-columns: 40% 55%;
+    -webkit-font-smoothing: antialised;
     align-items: center;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    column-gap: 5%;
+    display: grid;
+    flex-wrap: wrap;
+    font-size: 16px;
+    grid-template-columns: 492px 676.5px;
+    height: 404px;
     justify-items: self-end;
+    margin-bottom: 0px;
+    margin-right: 105px;
+    margin-left: 105px;
+    margin-top: 0px;
+    max-width: 1230px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    width: 1230px;
+}
+
+.illustration {
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: flex;
+    height: 404px;
+    justify-content: center;
+    margin-top: 0px;
+    order: 2;
+    width: 600px;
+}
+
+.imgContainer {
+    min-width: 600px;
+    min-height: 400px;
+    box-sizing: inherit;
+    height: 404px;
+    width: 600px;
+}
+
+.illustration img {
+    margin-left: 0;
+    width: 100%;
+    height: 404px;
+    width: 600px;
+}
+
+.socialHeader {
+    text-align: left;
+    width: 100%;
+    margin-right: 0;
+}
+
+.socialKicker {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.socialHeadline {
+    margin: 0 auto .5rem;
+    color: var(--theme-text);
+    word-break: break-word;
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 1.1875;
+    letter-spacing: -.8px;
+}
+
+.socialKickerText {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .875rem;
+    line-height: 1.429;
+    letter-spacing: 0;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-bottom: 0;
+    display: inline-block;
+    white-space: nowrap;
+    color: var(--theme-text);
+}
+
+.socialHeader p {
+    color: var(--theme-text);
+    max-width: 44rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.333;
+    letter-spacing: -.2px;
+    margin-top: 0;
 }
