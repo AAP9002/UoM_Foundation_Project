@@ -1,0 +1,11 @@
+.intro {
+    background-color: #f4ede4;
+}
+
+.introContent {
+    display: grid;
+    grid-column-gap: 5%;
+    grid-template-columns: 40% 55%;
+    align-items: center;
+    justify-items: self-end;
+}
