@@ -27,6 +27,11 @@ p,u{
     margin-top: 0;
 }
 
+iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
 /*top nav bar Start*/
 .nav-link{
     color: white;
@@ -110,11 +115,33 @@ p,u{
     text-align: center;
 }
 
-.sections img{
-    min-width: 400px;
+.sections h2{
+    padding-top: 20px;
 }
 
 .sections div{
     padding: 25px
 }
+
+splitContainer{
+    display: flex;
+}
+
+splitContainer div{
+    width: 50%;
+}
+
+splitContainer img{
+    width: 50%;
+}
+
 /*Sections of infomation end*/
+
+@media only screen and (max-width: 1000px){
+splitContainer{
+    display: block;
+}
+splitContainer div, splitContainer img{
+    width: 100%;
+}
+  }
