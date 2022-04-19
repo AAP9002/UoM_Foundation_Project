@@ -20,7 +20,7 @@
             </div>
                 <navMenu class="justify-content-center py-3 w-50">
                     <ul class="nav nav-pills">
-                        <li class="nav-item"><a href="../Index.html" class="nav-link" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="../Index.html" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Experiance</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Infomation</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Study</a></li>
@@ -35,7 +35,7 @@
         <toggle>
             <div>
                 <div class="w-100 d-flex justify-content-center nav nav-pills">
-                    <button class="btn btn-link nav-link" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-expanded="false" aria-controls="collapseExample"><svg
+                    <button class="btn btn-link nav-link" onclick="ToggleMobileNAV()" type="button" ><svg
                                 xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-list" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -43,9 +43,9 @@
                             </svg>
                             Menu</button>
                         </div>
-                <div id="mobileMenu" class="collapse">
+                <div id="MobileNav" class="MobileNav">
                     <ul class="nav nav-pills">
-                        <li class="nav-item w-100"><a href="../Index.html" class="nav-link" aria-current="page">Home</a></li>
+                        <li class="nav-item w-100"><a href="../Index.html" class="nav-link">Home</a></li>
                         <li class="nav-item w-100" ><a href="#" class="nav-link">Experiance</a></li>
                         <li class="nav-item w-100"><a href="#" class="nav-link">Infomation</a></li>
                         <li class="nav-item w-100"><a href="#" class="nav-link">Study</a></li>
@@ -95,7 +95,7 @@
         </splitContainer>
     </div>
     <div id="hallsRef" class="container sections">
-        <h1>Halls Accommodation</h1>
+        <h1>Halls</h1>
         <h3>Our accommodation is set across three main areas, all within easy reach of the campus, the city and
             amenities. Each area offers something different but all offer a great place to live and study.</h3>
         <splitContainer>
@@ -126,7 +126,7 @@
         </splitContainer>
     </div>
     <div id="privateRef" class="container sections">
-        <h1>Private Accommodation</h1>
+        <h1>Private</h1>
         <splitContainer>
             <div>
                 <p>Choosing private accommodation can offer more control over the location, preferences and in some
@@ -262,6 +262,18 @@
     <div id="footer" class="footer d-flex w-100 justify-content-center">
         <p>&copy;2022 - Foundation Year Project - Group F</p>
     </div>
+
+    <script>
+        function ToggleMobileNAV()
+        {
+            var MobileNav = document.getElementById("MobileNav");
+            if (MobileNav.style.maxHeight){
+                MobileNav.style.maxHeight = null;
+            } else {
+                MobileNav.style.maxHeight = MobileNav.scrollHeight + "px";
+            }
+        }
+</script>
 </body>
 
 </html>

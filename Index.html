@@ -20,7 +20,7 @@
             </div>
                 <navMenu class="justify-content-center py-3 w-50">
                     <ul class="nav nav-pills">
-                        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Experiance</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Infomation</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Study</a></li>
@@ -28,14 +28,14 @@
                         <li class="nav-item"><a href="./Accommodation/accommodation.html" class="nav-link">Accomodation</a></li>
                     </ul>
                 </navMenu>
-            <div class="" style="color: white; ">
+            <div style="color: white; ">
                 <h3> Foundation Computer Science</h1>
             </div>
         </div>
         <toggle>
             <div>
                 <div class="w-100 d-flex justify-content-center nav nav-pills">
-                    <button class="btn btn-link nav-link" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-expanded="false" aria-controls="collapseExample"><svg
+                    <button class="btn btn-link nav-link" onclick="ToggleMobileNAV()" type="button" ><svg
                                 xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-list" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -43,9 +43,9 @@
                             </svg>
                             Menu</button>
                         </div>
-                <div id="mobileMenu" class="collapse">
+                <div id="MobileNav" class="MobileNav">
                     <ul class="nav nav-pills">
-                        <li class="nav-item w-100"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                        <li class="nav-item w-100"><a href="#" class="nav-link active">Home</a></li>
                         <li class="nav-item w-100" ><a href="#" class="nav-link">Experiance</a></li>
                         <li class="nav-item w-100"><a href="#" class="nav-link">Infomation</a></li>
                         <li class="nav-item w-100"><a href="#" class="nav-link">Study</a></li>
@@ -60,4 +60,16 @@
     <div id="footer" class="footer d-flex w-100 justify-content-center">
         <p>&copy;2022 - Foundation Year Project - Group F</p>
     </div>
+
+    <script>
+        function ToggleMobileNAV()
+        {
+            var MobileNav = document.getElementById("MobileNav");
+            if (MobileNav.style.maxHeight){
+                MobileNav.style.maxHeight = null;
+            } else {
+                MobileNav.style.maxHeight = MobileNav.scrollHeight + "px";
+            }
+        }
+</script>
 </body>

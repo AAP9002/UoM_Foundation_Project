@@ -73,6 +73,11 @@ navMenu{
     min-width: 170px;
 }
 
+.MobileNav{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 
 /*top nav bar End*/
 
