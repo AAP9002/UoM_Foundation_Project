@@ -22,12 +22,12 @@
     margin-right: 105px;
     margin-left: 105px;
     margin-top: 0px;
-    max-width: 1230px;
+    max-width: 1260px;
     padding-bottom: 0px;
     padding-right: 0px;
     padding-left: 0px;
     padding-top: 0px;
-    width: 1230px;
+    width: 1260px;
 }
 
 .illustration {
@@ -50,10 +50,11 @@
 }
 
 .illustration img {
-    margin-left: 0;
+    margin-right: 105px;
+    margin-left: 0px;
     width: 100%;
-    height: 404px;
-    width: 600px;
+    height: 100%;
+    width: 100%;
 }
 
 .socialHeader {
