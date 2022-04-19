@@ -1,16 +1,84 @@
 /*Shared Site Css*/
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     /*background of whole site*/
     background-color: #f6f6f6;
 }
 
+h1{
+    -webkit-font-smoothing: antialised;
+    margin: 0 auto .5rem;
+    color: var(--theme-text);
+    word-break: break-word;
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 1.1875;
+    letter-spacing: -.8px;
+}
+
+p,u{
+    color: var(--theme-text);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.333;
+    letter-spacing: -.2px;
+    margin-top: 0;
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
 /*top nav bar Start*/
+.header{
+    background-color: #6b2c91;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 10px;
+    opacity:90%;
+}
+
+toggle{
+    display: none;
+}
+navMenu{
+    min-width: 600px;
+}
+
+@media only screen and (max-width: 1000px){
+    toggle{
+        display: block;
+    }
+
+    navMenu{
+        display:none;
+    }
+}
+
 .nav-link{
     color: white;
 }
 .nav-link:hover{
-    color: gray;
+    color: #eeeeeedc;
 }
+
+.logo{
+    min-width: 170px;
+}
+
+.MobileNav{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
 /*top nav bar End*/
 
 /*Imagebanner with text overlay start*/
@@ -42,7 +110,9 @@ body{
 .footer{
     background-color: #6b2c91;
     margin-top: 20px;
+    width:100%;
     color: whitesmoke;
+    bottom: 0;
 }
 
 /*Acomodation CSS - Alan*/
@@ -75,7 +145,7 @@ body{
 /*Secondary Navbar end*/
 /*Sections of infomation start*/
 .sections{
-    scroll-margin-top: 100px;
+    scroll-margin-top: 150px;
     padding: 25px;
     margin-bottom: 25px;
     margin-top: 50px;
@@ -85,11 +155,52 @@ body{
     text-align: center;
 }
 
-.sections img{
-    min-width: 400px;
+.sections h2{
+    padding-top: 20px;
 }
 
 .sections div{
     padding: 25px
 }
+
+splitContainer{
+    display: flex;
+}
+
+splitContainer div{
+    width: 50%;
+}
+
+splitContainer img{
+    width: 50%;
+}
+
+@media only screen and (max-width: 1000px){
+    splitContainer{
+        display: block;
+    }
+    splitContainer div, splitContainer img{
+        width: 100%;
+    }
+      }
+
 /*Sections of infomation end*/
+
+/*Alan Specific start*/
+privateAccomodationCompany{
+    display:flex;
+}
+privateAccomodationCompany img{
+    height: 50px;
+    width: auto;
+    max-width: 180px;
+}
+privateAccomodationCompany button{
+    margin:20px;
+    width: 100px;
+}
+
+privateAccomodationCompany button a{
+    color: white;
+}
+/*Alan Specific end*/

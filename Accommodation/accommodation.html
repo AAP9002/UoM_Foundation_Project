@@ -2,41 +2,66 @@
 <html>
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="../css/site.css" rel="stylesheet" />
-    <link href="../css/accommodation/accommodation_styles.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <Title>Accommodation</Title>
 </head>
 
 <body>
-    <div id="header" class="d-flex container"
-        style="background-color: #6b2c91; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; padding: 10px;opacity:90%;">
-        <div class="w-25">
-            <img style="height:75px;" src="../Images/Manchester Univerity Logo.png" />
+    <div id="header" class="container header">
+        <div class="d-flex">
+            <div class="w-25 logo">
+                <img style="height:75px;" src="../Images/Manchester Univerity Logo.png" />
+            </div>
+                <navMenu class="justify-content-center py-3 w-50">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="../Index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Experiance</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Infomation</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Study</a></li>
+                        <li class="nav-item"><a href="../Social/social.html" class="nav-link">Social</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Accomodation</a></li>
+                    </ul>
+                </navMenu>
+            <div class="" style="color: white; ">
+                <h3> Foundation Computer Science</h1>
+            </div>
         </div>
-        <header class="justify-content-center py-3 w-50">
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="../Index.html" class="nav-link" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Experiance</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Infomation</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Study</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Social</a></li>
-                <li class="nav-item"><a href="#" class="nav-link active">Accomodation</a></li>
-            </ul>
-        </header>
-        <div class="w-25" style="color: white; ">
-            <h3> Foundation Computer Science</h1>
-        </div>
+        <toggle>
+            <div>
+                <div class="w-100 d-flex justify-content-center nav nav-pills">
+                    <button class="btn btn-link nav-link" onclick="ToggleMobileNAV()" type="button" ><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                            Menu</button>
+                        </div>
+                <div id="MobileNav" class="MobileNav">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item w-100"><a href="../Index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item w-100" ><a href="#" class="nav-link">Experiance</a></li>
+                        <li class="nav-item w-100"><a href="#" class="nav-link">Infomation</a></li>
+                        <li class="nav-item w-100"><a href="#" class="nav-link">Study</a></li>
+                        <li class="nav-item w-100"><a href="../Social/social.html" class="nav-link">Social</a></li>
+                        <li class="nav-item w-100"><a href="#" class="nav-link active">Accomodation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </toggle>
     </div>
 
     <img class="w-100 imageBanner blurBackground"
         src="https://i0.wp.com/unifresher.co.uk/wp-content/uploads/2021/02/Copy-of-Feature-images-2021-02-15T101124.859.png?resize=1920%2C768&ssl=1" />
     <div class="w-100 TextOverlay">
-        <h1><mark>Accomodation</mark></h1>
-        <h3><mark>Finding the best place for you</mark></h3>
+        <h2 class="u-text--uppercase">Accomodation</h2>
+        <h1>Finding the best place for you</h1>
     </div>
     <div class="SectionSelection d-flex">
         <ul id="topOfSections" class="justify-content-center  nav nav-pills SectionSelection">
@@ -51,115 +76,204 @@
     </div>
     <div id="Overview" class="container topSection">
         <h1>Overview</h1>
-        <div class="d-flex">
-            <div class="w-50">
+        <splitContainer>
+            <div class="w-60">
                 <strong>
-                <p>The majority of students coming to university will be moving away from home for the first time which, while exciting, can also be a daunting experience. There are a variety of accommodation options to suit every individual's needs and wants.</p>
-                <p>Rooms can be catered or self catered, ensuite or shared bathrooms and come with different sized beds, desks and more. These rooms can be either booked through university accommodation (halls) or private accommodation.</p>
-                <p>Applications are simple and there&#39;s plenty of options within walking distance from the campus with convenient transport. Most accommodations offer bills included, utilities on site and a variety of rooms to suit your needs and budget. These are offered in 43 or 50 week contracts, spanning your academic year.</p>
-            </strong>
+                    <p>The majority of students coming to university will be moving away from home for the first time
+                        which, while exciting, can also be a daunting experience. There are a variety of accommodation
+                        options to suit every individual&#39;s needs and wants.</p>
+                    <p>Rooms can be catered or self catered, ensuite or shared bathrooms and come with different sized
+                        beds, desks and more. These rooms can be either booked through university accommodation (halls)
+                        or private accommodation.</p>
+                    <p>Applications are simple and there&#39;s plenty of options within walking distance from the campus
+                        with convenient transport. Most accommodations offer bills included, utilities on site and a
+                        variety of rooms to suit your needs and budget. These are offered in 43 or 50 week contracts,
+                        spanning your academic year.</p>
+                </strong>
             </div>
-            <img class="w-50" style="padding: 25px;"
-                src="https://www.reading.ac.uk/discover/-/media/discover/images/tiles/carousel-tiles/ready-to-study/accommodation-study-abroad-intro.jpg" />
-        </div>
+            <img class="h-100" src="../Images/Accomodation/Accomodation Overview.png">
+        </splitContainer>
     </div>
     <div id="hallsRef" class="container sections">
         <h1>Halls</h1>
-        <h3>Our accommodation is set across three main areas, all within easy reach of the campus, the city and amenities. Each area offers something different but all offer a great place to live and study.</h3>
-        <div class="d-flex">
-            <img class="w-50" style="padding: 25px;"
-                src="../Images/Accomodation/Halls-3-Locations.jpeg" />
-            <div class="w-50">
-                <p>Starting university is an exciting time and living in university halls is a great way to meet other students, build friendships, and live with people from a variety of different backgrounds. Manchester halls of residence aren't just accommodation but their own communities, where many Manchester students make friends for life.</p>
-                <p>There are plenty of exciting events and opportunities life in halls has to offer. Every hall offers an extensive range of facilities, from computer clusters and libraries, to sports and bars, meaning you'll never be short of things to do or ways to socialise and relax.</p>
-                <iframe type="text/html" width="640" height="360" src="https://www.youtube.com/embed/fx0mgRZstMI?autoplay=1" frameborder="0"></iframe>
+        <h3>Our accommodation is set across three main areas, all within easy reach of the campus, the city and
+            amenities. Each area offers something different but all offer a great place to live and study.</h3>
+        <splitContainer>
+            <img class="h-100" src="../Images/Accomodation/Halls-3-Locations.jpeg" />
+            <div>
+                <p>Starting university is an exciting time and living in university halls is a great way to meet other
+                    students, build friendships, and live with people from a variety of different backgrounds.
+                    Manchester halls of residence aren&#39;t just accommodation but their own communities, where many
+                    Manchester students make friends for life.</p>
+                <p>There are plenty of exciting events and opportunities life in halls has to offer. Every hall offers
+                    an extensive range of facilities, from computer clusters and libraries, to sports and bars, meaning
+                    you&#39;ll never be short of things to do or ways to socialise and relax.</p>
+                <iframe src="https://www.youtube.com/embed/fx0mgRZstMI?autoplay=1" frameborder="0" allowfullscreen
+                    class="video"></iframe>
                 <u>Key Points</u>
                 <ul>
                     <li>You need a university ID found on your UCAS Offer letter before applying</li>
                     <li>You choose your top 5 preferred accommodations you wish to be placed</li>
                     <li>The initial application is free</li>
                     <li>You will receive a room offer via email outlining rent, utilities and more</li>
-                    <li>An £400 deposit is needed to secure your room (refunded if course is not started by student)</li>
+                    <li>An £400 deposit is needed to secure your room (refunded if course is not started by student)
+                    </li>
                 </ul>
-                <button class="btn btn-success w-100" onclick="window.location='https\://www.accommodation.manchester.ac.uk/applynow/'">APPLY FOR HALLS NOW</button>
+                <button class="btn btn-success w-100"
+                    onclick="window.location='https\://www.accommodation.manchester.ac.uk/applynow/'">APPLY FOR HALLS
+                    NOW</button>
             </div>
-        </div>
+        </splitContainer>
     </div>
     <div id="privateRef" class="container sections">
         <h1>Private</h1>
-        <div class="d-flex">
-            <div class="w-50">
-                <p>Choosing private accommodation can offer more control over the location, preferences and in some cases the ability to choose the exact room. Offering the same services as university accommodation, it is an ideal alternate. You can rent studios, 2-8 bed flats and houses, requesting to share flats with friends. The only difference from halls is you may be placed with students who have completed their first year.</p>
+        <splitContainer>
+            <div>
+                <p>Choosing private accommodation can offer more control over the location, preferences and in some
+                    cases the ability to choose the exact room. Offering the same services as university accommodation,
+                    it is an ideal alternate. You can rent studios, 2-8 bed flats and houses, requesting to share flats
+                    with friends. The only difference from halls is you may be placed with students who have completed
+                    their first year.</p>
                 <p>Here are a few popular accommodation providers close to the university:</p>
             </div>
-            <img class="w-50" style="padding: 25px;"
-                src="https://www.reading.ac.uk/discover/-/media/discover/images/tiles/carousel-tiles/ready-to-study/accommodation-study-abroad-intro.jpg" />
-        </div>
+            <div>
+                <privateAccomodationCompany>
+                    <button class="btn btn-info" onclick="window.location='https\://www.iqstudentaccommodation.com/'">Visit Site</button>
+                    <img src="../Images/Accomodation/iQ-Student-Accommodation-Logo.png">
+                </privateAccomodationCompany>
+                <privateAccomodationCompany>
+                    <button class="btn btn-info" onclick="window.location='https\://www.sanctuary-students.com/'">Visit Site</button>
+                    <img src="../Images/Accomodation/Santuary Student Logo.png">
+                </privateAccomodationCompany>
+                <privateAccomodationCompany>
+                    <button class="btn btn-info" onclick="window.location='https\://www.unitestudents.com/'">Visit Site</button>
+                    <img src="../Images/Accomodation/Unite Students Logo.jpg">
+                </privateAccomodationCompany>
+                <privateAccomodationCompany>
+                    <button class="btn btn-info" onclick="window.location='https\://www.vitastudent.com/en/'">Visit Site</button>
+                    <img src="../Images/Accomodation/Vita Student Logo.png">
+                </privateAccomodationCompany>
+            </div>
+        </splitContainer>
     </div>
     <div id="locationRef" class="container sections">
         <h1>Location</h1>
-        <div class="d-flex">
-            <iframe class="w-50"
-                src="https://www.google.com/maps/d/embed?mid=1PobVFQRltWnLWP3OuZXbSRQV518uSOMF&ehbc=2E312F" width="640"
-                height="480"></iframe>
-                <div class="w-50">
-                    <p>Local to the university, there are many options for accommodation. On this map:</p>
-
-                </div>
-        </div>
+        <h2>Local to the university, there are many options for accommodation</h2>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1PobVFQRltWnLWP3OuZXbSRQV518uSOMF&ehbc=2E312F"></iframe>
     </div>
     <div id="transportRef" class="container sections">
         <h1>Transport</h1>
-        <p>There are Trams, Busses, Cycle lanes and Taxis available across greater Manchester getting you from A to B cheap and quick. If you're staying in accommodation, you'll most likely be served by stagecoach buses and the TFGM bike lanes. The university offers schemes and runs the 147 bus for free with your student card.</p>
+        <p>There are Trams, Busses, Cycle lanes and Taxis available across greater Manchester getting you from A to B
+            cheap and quick. If you're staying in accommodation, you&#39;ll most likely be served by stagecoach buses and
+            the TFGM bike lanes. The university offers schemes and runs the 147 bus for free with your student card.</p>
         <h2>Stagecoach Bus Service</h2>
-        <div class="d-flex">
-            <div class="w-75">
-                <p>Stagecoach and its fleet of 700 buses in greater Manchester is the biggest public transport company in the area. With an app to track your bus live, it is convenient and reliable 24/7. Many of the buses are electric hybrid, moving towards TFGM goal to be net zero.</p>
+        <p>Stagecoach and its fleet of 700 buses in greater Manchester is the biggest public transport company
+            in the area. With an app to track your bus live, it is convenient and reliable 24/7. Many of the
+            buses are electric hybrid, moving towards TFGM goal to be net zero.</p>
+        <splitContainer>
+            <div>
+                    <table class="table">
+                        <tr>
+                          <th>Ticket</th>
+                          <th>Rate</th>
+                        </tr>
+                        <tr>
+                          <td>Day Rider</td>
+                          <td>£5.30</td>
+                        </tr>
+                        <tr>
+                            <td>7 Day Rider</td>
+                            <td>£17.50</td>
+                          </tr>
+                          <tr>
+                            <td>Student Term</td>
+                            <td>£95</td>
+                          </tr>
+                    </table>
             </div>
-            <img class="w-25" style="padding: 25px;"
-                src="../Images/Accomodation/Stagecoach Logo.png" />
-        </div>
+            <img class="h-100" src="../Images/Accomodation/Stagecoach Logo.png" />
+        </splitContainer>
         <h2>147 Bus</h2>
-        <div class="d-flex">
-            <div class="w-50">
-                Text Here
-            </div>
-            <img class="w-50" style="padding: 25px;"
-                src="../Images/Accomodation/147 Bus Route.jpg" />
-        </div>
+        <p>The 147 bus offers a reliable service free of charge to all students.</p>
+        <img class=" h-100 container" src="../Images/Accomodation/147 Bus Route.png" />
         <h2>Bike Lanes</h2>
-        <div class="d-flex">
-            <div class="w-50">
-                <p>3 miles of cycle lanes from Fallowfield to the City Centre have been laid, mostly fully separate from the road to ensure all riders are safe. In addition to this there are dedicated bike lanes on all major roads to get you from A to B anywhere in Manchester. The University encourages cycling by offering guides and bike lock schemes to help you get started. For convenience, there are 1500 bikes and electric bikes for hire available throughout the campus and city. Pedal bikes cost 50p to unlock and 5p per minute to ride. E-bikes cost £1 to unlock and 10p per minute to ride.</p>
-                <a href="https://beeactive.tfgm.com/cycle-hire/" target="_blank">(For more information on TFGM bike: Click Here)</a>
+        <splitContainer>
+            <div>
+                <p>3 miles of cycle lanes from Fallowfield to the City Centre have been laid, mostly fully separate from
+                    the road to ensure all riders are safe. In addition to this there are dedicated bike lanes on all
+                    major roads to get you from A to B anywhere in Manchester. The University encourages cycling by
+                    offering guides and bike lock schemes to help you get started. For convenience, there are 1500 bikes
+                    and electric bikes for hire available throughout the campus and city. Pedal bikes cost 50p to unlock
+                    and 5p per minute to ride. E-bikes cost £1 to unlock and 10p per minute to ride.</p>
+                <a href="https://beeactive.tfgm.com/cycle-hire/" target="_blank">(For more information on TFGM bike:
+                    Click Here)</a>
             </div>
-            <img class="w-50" style="padding: 25px;"
-                src="../Images/Accomodation/TFGM Bike Hire Zone.png" />
-        </div>
+            <img class="h-100" src="../Images/Accomodation/TFGM Bike Hire Zone.png" />
+        </splitContainer>
     </div>
     <div id="wteRef" class="container sections">
         <h1>What To Expect</h1>
-        <div class="d-flex">
-            <img class="w-50" style="padding: 25px;"
+        <h2>Room Mates</h2>
+        <splitContainer>
+            <img class="h-100"
                 src="https://www.reading.ac.uk/discover/-/media/discover/images/tiles/carousel-tiles/ready-to-study/accommodation-study-abroad-intro.jpg" />
-                <div class="w-50">
-                </div>
-        </div>
+            <div>
+                <p>Moving in, everyone is nervous to meet new people and get to know the university. The first people you will likely meet are your roommates. With freshers week at the beginning and all the events offered, you&#39;ll have lots of opportunity to get to know them and form friendships. If you are worried about personal space, only you have access to your locked room and everyone establishes separate personal storage in the communal spaces.</p>
+            </div>
+        </splitContainer>
+        <h2>Utilities - Laundry</h2>
+        <splitContainer>
+            <img class="h-100"
+                src="../Images/Accomodation/Laundry.png" />
+            <div>
+                <p>Circuit Laundry offer washing and drying in many accomodation on site. The average price for washing is £3.20 and for drying £1.80 depending on the settings, which is managed on a mobile app making it easy to operate. As a guide, washing clothes every two weeks will be enough however this will widely vary.</p>
+            </div>
+        </splitContainer>
+        <h2>Parcels</h2>
+        <splitContainer>
+            <img class="h-100"
+                src="../Images/Accomodation/Parcels.png" />
+            <div>
+                <p>Any parcels are delivered to reception, where you can collect them anytime (depending on the accommodation). It is safe and reliable making receiving packages convenient for you. There are also local royal mail centres, parcel collection lockers and drop off boxes.</p>
+            </div>
+        </splitContainer>
     </div>
     <div id="wtbRef" class="container sections">
         <h1>What To Bring</h1>
-        <div class="d-flex">
-            <div class="w-50">
+        <splitContainer>
+            <div>
+                <p>Getting ready for moving day requires planning, however in the event you find you don&#39;t have everything, you&#39;ll find local shops, the Arndale shopping centre and online store will have what you need after moving in. Here is an item list of the basic essentials to take with you:</p>
+                <button class="w-100 btn btn-info" onclick="window.location='https\://docs.google.com/spreadsheets/d/18VuOEvEoqGjnhwYSKn-yrAiw0QpWDBXAYbtKdW4zMt8/edit?usp=sharing'">Item List (Click Here)</button>
+                <p></p>
+                <u>Recomendations For Moving Day</u>
+                <ul>
+                    <li>A mattress topper is recommended as beds may be used and uncomfortable</li>
+                    <li>Buy grocery shopping on the way to the accommodation to save storing frozen food at home before the move</li>
+                    <li>Bring clean clothes and bedding as laundry rooms are expensive</li>
+                    <li>Toilet roll is essential</li>
+                    <li>You may wish to take cleaning products to sanitise the flat from previous residents</li>
+                </ul>
             </div>
-            <img class="w-50" style="padding: 25px;"
-                src="https://www.reading.ac.uk/discover/-/media/discover/images/tiles/carousel-tiles/ready-to-study/accommodation-study-abroad-intro.jpg" />
-        </div>
+            <img class="h-100"
+                src="../Images/Accomodation/What To Bring.png" />
+        </splitContainer>
     </div>
-    <div id="footerDiv" class="footer">
-        <row class="container d-flex justify-content-center">
-            <p>&copy;2022 - Foundation Year Project - Group F</p>
-        </row>
     </div>
+    <div id="footer" class="footer d-flex w-100 justify-content-center">
+        <p>&copy;2022 - Foundation Year Project - Group F</p>
+    </div>
+
+    <script>
+        function ToggleMobileNAV()
+        {
+            var MobileNav = document.getElementById("MobileNav");
+            if (MobileNav.style.maxHeight){
+                MobileNav.style.maxHeight = null;
+            } else {
+                MobileNav.style.maxHeight = MobileNav.scrollHeight + "px";
+            }
+        }
+</script>
 </body>
 
 </html>
