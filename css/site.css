@@ -192,6 +192,7 @@ privateAccomodationCompany{
 }
 privateAccomodationCompany img{
     height: 50px;
+    width: auto;
     max-width: 180px;
 }
 privateAccomodationCompany button{
