@@ -1,4 +1,4 @@
-/*Shared Site Css*/
+/*Shared Site Css start*/
 html {
     scroll-behavior: smooth;
   }
@@ -35,7 +35,7 @@ iframe {
     width: 100%;
     aspect-ratio: 16/9;
 }
-
+/*Shared Site Css end*/
 /*top nav bar Start*/
 .header{
     background-color: #6b2c91;
@@ -113,7 +113,6 @@ navMenu{
     bottom: 0;
 }
 
-/*Acomodation CSS - Alan*/
 /*Secondary Navbar start*/
 .SectionSelection{
     padding-top: 10px;
@@ -184,7 +183,7 @@ splitContainer img{
 
 /*Sections of infomation end*/
 
-/*Alan Specific start*/
+/*Alan Specific CSS start*/
 privateAccomodationCompany{
     display:flex;
 }
