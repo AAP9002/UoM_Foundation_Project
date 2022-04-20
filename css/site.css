@@ -39,8 +39,6 @@ iframe {
 /*top nav bar Start*/
 .header{
     background-color: #6b2c91;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
     padding: 10px;
     opacity:90%;
 }
