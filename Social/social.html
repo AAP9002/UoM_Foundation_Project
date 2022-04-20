@@ -12,7 +12,7 @@
 </head>    
 
 <body>
-    <div id="header" class="header">
+    <div id="header" class="header container">
         <div class="d-flex">
             <div class="container w-25 logo">
                 <img style="height:75px;" src="../Images/Manchester Univerity Logo.png" />
@@ -247,4 +247,15 @@
     <div id="footer" class="footer d-flex w-100 justify-content-center">
         <p>&copy;2022 - Foundation Year Project - Group F</p>
     </div>
+    <script>
+        function ToggleMobileNAV()
+        {
+            var MobileNav = document.getElementById("MobileNav");
+            if (MobileNav.style.maxHeight){
+                MobileNav.style.maxHeight = null;
+            } else {
+                MobileNav.style.maxHeight = MobileNav.scrollHeight + "px";
+            }
+        }
+    </script>
 </body>
