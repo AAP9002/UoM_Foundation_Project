@@ -243,6 +243,9 @@ topicsDiv{
     font-size: medium;
     background-color: azure ;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 topicsDiv img{
@@ -250,14 +253,16 @@ topicsDiv img{
     height: 300px;
     object-fit:cover;
     border-radius: 20px;
-    position: absolute;
+    position:absolute;
 }
 
 topicsDiv h2{
-    width: 300px;
     text-align: center;
-    padding-top: 20px;
-    position: absolute;
+    z-index: 100;
+    background-color:azure;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 80%;
 }
 
 @media only screen and (max-width: 1120px){
@@ -269,9 +274,12 @@ topicsDiv h2{
 
 @media only screen and (max-width: 990px){
 
-    topicsDiv,topicsDiv img,topicsDiv h2{
+    topicsDiv,topicsDiv img{
         width: 200px;
         height: 200px;
+    }
+
+    topicsDiv h2{
         font-size:larger;
     }
 }
