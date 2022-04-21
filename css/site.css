@@ -35,6 +35,9 @@ iframe {
     width: 100%;
     aspect-ratio: 16/9;
 }
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
 /*Shared Site Css end*/
 /*top nav bar Start*/
 .header{
@@ -48,6 +51,13 @@ toggle{
 }
 navMenu{
     min-width: 600px;
+}
+
+.NavbarTitleText{
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 1000px){
@@ -201,3 +211,89 @@ privateAccomodationCompany button a{
     color: white;
 }
 /*Alan Specific end*/
+
+/*Homepage start*/
+.homepageHead{
+    stroke: none; 
+    fill:#6b2c91;
+    opacity: 90%;
+    position: absolute;
+    z-index: -100;
+    min-height: 300px;
+}
+
+.homepageHeadContent{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.homepageHeadContent img{
+    width: 40%;
+}
+
+.HomepageTitleText{
+    color: #f6f6f6;
+}
+
+topicsDiv{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 25px;
+    font-size: medium;
+    background-color: azure ;
+    border-radius: 20px;
+}
+
+topicsDiv img{
+    width: 300px;
+    height: 300px;
+    object-fit:cover;
+    border-radius: 20px;
+    position: absolute;
+}
+
+topicsDiv h2{
+    width: 300px;
+    text-align: center;
+    padding-top: 20px;
+    position: absolute;
+}
+
+@media only screen and (max-width: 1120px){
+
+    .homepageHeadContent img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 990px){
+
+    topicsDiv,topicsDiv img,topicsDiv h2{
+        width: 200px;
+        height: 200px;
+        font-size:larger;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .HomepageTitleText p{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 770px){
+    .HomepageTitleText{
+        color: black;
+    }
+    
+}
+
+@media only screen and (max-width: 530px){
+
+    topicsDiv:first-of-type {
+        display: none;
+    }
+}
+/*Homepage End*/
