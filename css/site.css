@@ -212,6 +212,30 @@ privateAccomodationCompany button a{
 }
 /*Alan Specific end*/
 
+/*Zak Specific start*/
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+ 
+  .progress-bar {
+    height: 8px;
+    background: #6d04aa;
+    width: 0%;
+  }
+/*Zak Specific end*/
+
 /*Homepage start*/
 .homepageHead{
     stroke: none; 
