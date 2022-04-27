@@ -221,13 +221,9 @@ privateAccomodationCompany button a{
     background-color: #f1f1f1;
 }
 .progress-container {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    width: 8px;
+    width: 100%;
+    height: 8px;
     background: #ccc;
-    z-index: 100;
 }
   
 .progress-bar {
