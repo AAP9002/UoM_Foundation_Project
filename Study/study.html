@@ -20,7 +20,7 @@
                     <img style="height:75px;" src="../Images/Manchester Univerity Logo.png" />
                 </div>
                 <navMenu class="justify-content-center py-3 w-50">
-                    <ul id="topOfSections" style="position:relative;" class="justify-content-center  nav nav-pills SectionSelection">
+                    <ul class="nav nav-pills">
                         <li class="nav-item"><a href="../Homepage/Index.html" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="../Experience/experience.html" class="nav-link">Experience</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Information</a></li>
@@ -31,7 +31,7 @@
                 </navMenu>
                 <div class="headed">
                     <div class="progress-container">
-                        <div class="progress-bar" style="left:0; bottom:0; position: absolute;" id="bar"></div>
+                      <div class="progress-bar" id="bar"></div>
                     </div>  
                 </div> 
                 <div style="color: white; vertical-align: baseline;">
@@ -71,13 +71,14 @@
         </div> 
         
         <div class="SectionSelection d-flex">
-        <ul id="topOfSections" class="justify-content-center  nav nav-pills SectionSelection">
+            <ul id="topOfSections" style="position:relative;" class="justify-content-center  nav nav-pills SectionSelection">
             <li class="nav-item"><a href="#Introduction" class="nav-link">Introduction</a></li>
             <li class="nav-item"><a href="#Structure" class="nav-link">Structure</a></li>
             <li class="nav-item"><a href="#Difficulty" class="nav-link">Difficulty</a></li>
             <li class="nav-item"><a href="#StudyTips" class="nav-link">Study Tips</a></li>
             <li class="nav-item"><a href="#Resources" class="nav-link">Resources</a></li>
         </ul>
+        <div class="progress-bar" style="left:0; bottom:0; position: absolute;" id="bar"></div>
     </div>
     <div id="Introduction" class="container topSection">
         <h1>Introduction</h1>
@@ -122,12 +123,14 @@
     </section>
     <script>
         window.onscroll = function() {ScrollEffectFunction()};
+
         function ScrollEffectFunction() {
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scrolled = (winScroll / height) * 100;
         document.getElementById("bar").style.width = scrolled + "%";
-        } 
+        }   
+
         function ToggleMobileNAV()
         {
             var MobileNav = document.getElementById("MobileNav");
