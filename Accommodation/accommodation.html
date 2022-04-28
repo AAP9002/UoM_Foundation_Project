@@ -64,7 +64,7 @@
         <h1>Finding the best place for you</h1>
     </div>
     <div class="SectionSelection d-flex">
-        <ul id="topOfSections" class="justify-content-center  nav nav-pills SectionSelection">
+        <ul id="topOfSections" style="position:relative;" class="justify-content-center  nav nav-pills SectionSelection">
             <li class="nav-item"><a href="#Overview" class="nav-link">Overview</a></li>
             <li class="nav-item"><a href="#hallsRef" class="nav-link">Halls</a></li>
             <li class="nav-item"><a href="#privateRef" class="nav-link">Private</a></li>
@@ -73,6 +73,7 @@
             <li class="nav-item"><a href="#wteRef" class="nav-link">What To Expect</a></li>
             <li class="nav-item"><a href="#wtbRef" class="nav-link">What To Bring</a></li>
         </ul>
+        <div class="progress-bar" style="left:0; bottom:0; position: absolute;" id="bar"></div>
     </div>
     <div id="Overview" class="container topSection">
         <h1>Overview</h1>
@@ -264,6 +265,15 @@
     </div>
 
     <script>
+        window.onscroll = function() {ScrollEffectFunction()};
+
+        function ScrollEffectFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("bar").style.width = scrolled + "%";
+        }   
+
         function ToggleMobileNAV()
         {
             var MobileNav = document.getElementById("MobileNav");
