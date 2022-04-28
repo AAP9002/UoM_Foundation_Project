@@ -202,13 +202,9 @@ privateAccomodationCompany img{
     width: auto;
     max-width: 180px;
 }
-privateAccomodationCompany button{
+privateAccomodationCompany a{
     margin:20px;
     width: 100px;
-}
-
-privateAccomodationCompany button a{
-    color: white;
 }
 /*Alan Specific end*/
 
