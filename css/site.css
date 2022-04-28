@@ -1,4 +1,4 @@
-/*Shared Site Css*/
+/*Shared Site Css start*/
 html {
     scroll-behavior: smooth;
   }
@@ -36,11 +36,12 @@ iframe {
     aspect-ratio: 16/9;
 }
 
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+/*Shared Site Css end*/
 /*top nav bar Start*/
 .header{
     background-color: #6b2c91;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
     padding: 10px;
     opacity:90%;
 }
@@ -50,6 +51,13 @@ toggle{
 }
 navMenu{
     min-width: 600px;
+}
+
+.NavbarTitleText{
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 1000px){
@@ -115,7 +123,6 @@ navMenu{
     bottom: 0;
 }
 
-/*Acomodation CSS - Alan*/
 /*Secondary Navbar start*/
 .SectionSelection{
     padding-top: 10px;
@@ -186,7 +193,7 @@ splitContainer img{
 
 /*Sections of infomation end*/
 
-/*Alan Specific start*/
+/*Alan Specific CSS start*/
 privateAccomodationCompany{
     display:flex;
 }
@@ -195,12 +202,125 @@ privateAccomodationCompany img{
     width: auto;
     max-width: 180px;
 }
-privateAccomodationCompany button{
+privateAccomodationCompany a{
     margin:20px;
     width: 100px;
 }
-
-privateAccomodationCompany button a{
-    color: white;
-}
 /*Alan Specific end*/
+
+/*Zak Specific start*/
+.headed{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #aa04a2;
+  width: 0%;
+}
+
+/*Zak Specific end*/
+
+/*Homepage start*/
+.homepageHead{
+    stroke: none; 
+    fill:#6b2c91;
+    opacity: 90%;
+    position: absolute;
+    z-index: -100;
+    min-height: 300px;
+}
+
+.homepageHeadContent{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.homepageHeadContent img{
+    width: 40%;
+}
+
+.HomepageTitleText{
+    color: #f6f6f6;
+}
+
+.topicsDiv{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 25px;
+    font-size: medium;
+    background-color: azure ;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topicsDiv img{
+    width: 300px;
+    height: 300px;
+    object-fit:cover;
+    border-radius: 20px;
+    position:absolute;
+}
+
+.topicsDiv h2{
+    text-align: center;
+    z-index: 100;
+    background-color:azure;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 80%;
+    color: black;
+}
+
+@media only screen and (max-width: 1120px){
+
+    .homepageHeadContent img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 990px){
+
+    .topicsDiv,.topicsDiv img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .topicsDiv h2{
+        font-size:larger;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .HomepageTitleText p{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 770px){
+    .HomepageTitleText{
+        color: black;
+    }
+    
+}
+
+@media only screen and (max-width: 530px){
+
+    .topicsDiv:first-of-type {
+        display: none;
+    }
+}
+/*Homepage End*/

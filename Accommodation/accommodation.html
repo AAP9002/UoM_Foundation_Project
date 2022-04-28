@@ -13,23 +13,23 @@
 </head>
 
 <body>
-    <div id="header" class="container header">
+    <div id="header" class="header">
         <div class="d-flex">
-            <div class="w-25 logo">
+            <div class="container w-25 logo">
                 <img style="height:75px;" src="../Images/Manchester Univerity Logo.png" />
             </div>
                 <navMenu class="justify-content-center py-3 w-50">
                     <ul class="nav nav-pills">
-                        <li class="nav-item"><a href="../Index.html" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Experiance</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Infomation</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Study</a></li>
+                        <li class="nav-item"><a href="../Homepage/Index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="../Experience/experience.html" class="nav-link">Experience</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Information</a></li>
+                        <li class="nav-item"><a href="../Study/study.html" class="nav-link">Study</a></li>
                         <li class="nav-item"><a href="../Social/social.html" class="nav-link">Social</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link active">Accomodation</a></li>
+                        <li class="nav-item"><a href="./accommodation.html" class="nav-link active">Accomodation</a></li>
                     </ul>
                 </navMenu>
-            <div class="" style="color: white; ">
-                <h3> Foundation Computer Science</h1>
+            <div style="color: white; vertical-align: baseline;">
+                <h4> Foundation Computer Science</h4>
             </div>
         </div>
         <toggle>
@@ -45,12 +45,12 @@
                         </div>
                 <div id="MobileNav" class="MobileNav">
                     <ul class="nav nav-pills">
-                        <li class="nav-item w-100"><a href="../Index.html" class="nav-link">Home</a></li>
-                        <li class="nav-item w-100" ><a href="#" class="nav-link">Experiance</a></li>
-                        <li class="nav-item w-100"><a href="#" class="nav-link">Infomation</a></li>
-                        <li class="nav-item w-100"><a href="#" class="nav-link">Study</a></li>
+                        <li class="nav-item w-100"><a href="../Homepage/Index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item w-100" ><a href="../Experience/experience.html" class="nav-link">Experience</a></li>
+                        <li class="nav-item w-100"><a href="#" class="nav-link">Information</a></li>
+                        <li class="nav-item w-100"><a href="../Study/study.html" class="nav-link">Study</a></li>
                         <li class="nav-item w-100"><a href="../Social/social.html" class="nav-link">Social</a></li>
-                        <li class="nav-item w-100"><a href="#" class="nav-link active">Accomodation</a></li>
+                        <li class="nav-item w-100"><a href="./accommodation.html" class="nav-link active">Accomodation</a></li>
                     </ul>
                 </div>
             </div>
@@ -58,13 +58,13 @@
     </div>
 
     <img class="w-100 imageBanner blurBackground"
-        src="https://i0.wp.com/unifresher.co.uk/wp-content/uploads/2021/02/Copy-of-Feature-images-2021-02-15T101124.859.png?resize=1920%2C768&ssl=1" />
+        src="../Images/Accomodation/Accomodation Main.jpg" />
     <div class="w-100 TextOverlay">
         <h2 class="u-text--uppercase">Accomodation</h2>
         <h1>Finding the best place for you</h1>
     </div>
     <div class="SectionSelection d-flex">
-        <ul id="topOfSections" class="justify-content-center  nav nav-pills SectionSelection">
+        <ul id="topOfSections" style="position:relative;" class="justify-content-center  nav nav-pills SectionSelection">
             <li class="nav-item"><a href="#Overview" class="nav-link">Overview</a></li>
             <li class="nav-item"><a href="#hallsRef" class="nav-link">Halls</a></li>
             <li class="nav-item"><a href="#privateRef" class="nav-link">Private</a></li>
@@ -73,6 +73,7 @@
             <li class="nav-item"><a href="#wteRef" class="nav-link">What To Expect</a></li>
             <li class="nav-item"><a href="#wtbRef" class="nav-link">What To Bring</a></li>
         </ul>
+        <div class="progress-bar" style="left:0; bottom:0; position: absolute;" id="bar"></div>
     </div>
     <div id="Overview" class="container topSection">
         <h1>Overview</h1>
@@ -119,9 +120,9 @@
                     <li>An £400 deposit is needed to secure your room (refunded if course is not started by student)
                     </li>
                 </ul>
-                <button class="btn btn-success w-100"
-                    onclick="window.location='https\://www.accommodation.manchester.ac.uk/applynow/'">APPLY FOR HALLS
-                    NOW</button>
+                <a type="button" class="btn btn-success w-100"
+                    href='https://www.accommodation.manchester.ac.uk/applynow/' target="_blank">APPLY FOR HALLS
+                    NOW</a>
             </div>
         </splitContainer>
     </div>
@@ -138,19 +139,19 @@
             </div>
             <div>
                 <privateAccomodationCompany>
-                    <button class="btn btn-info" onclick="window.location='https\://www.iqstudentaccommodation.com/'">Visit Site</button>
+                    <a type="button" class="btn btn-info" href="https://www.iqstudentaccommodation.com/" target="_blank">Visit Site</a>
                     <img src="../Images/Accomodation/iQ-Student-Accommodation-Logo.png">
                 </privateAccomodationCompany>
                 <privateAccomodationCompany>
-                    <button class="btn btn-info" onclick="window.location='https\://www.sanctuary-students.com/'">Visit Site</button>
+                    <a type="button" class="btn btn-info" href="https://www.sanctuary-students.com/" target="_blank">Visit Site</a>
                     <img src="../Images/Accomodation/Santuary Student Logo.png">
                 </privateAccomodationCompany>
                 <privateAccomodationCompany>
-                    <button class="btn btn-info" onclick="window.location='https\://www.unitestudents.com/'">Visit Site</button>
+                    <a type="button" class="btn btn-info" href="https://www.unitestudents.com/" target="_blank">Visit Site</a>
                     <img src="../Images/Accomodation/Unite Students Logo.jpg">
                 </privateAccomodationCompany>
                 <privateAccomodationCompany>
-                    <button class="btn btn-info" onclick="window.location='https\://www.vitastudent.com/en/'">Visit Site</button>
+                    <a type="button" class="btn btn-info" href="https://www.vitastudent.com/en/" target="_blank">Visit Site</a>
                     <img src="../Images/Accomodation/Vita Student Logo.png">
                 </privateAccomodationCompany>
             </div>
@@ -243,7 +244,7 @@
         <splitContainer>
             <div>
                 <p>Getting ready for moving day requires planning, however in the event you find you don&#39;t have everything, you&#39;ll find local shops, the Arndale shopping centre and online store will have what you need after moving in. Here is an item list of the basic essentials to take with you:</p>
-                <button class="w-100 btn btn-info" onclick="window.location='https\://docs.google.com/spreadsheets/d/18VuOEvEoqGjnhwYSKn-yrAiw0QpWDBXAYbtKdW4zMt8/edit?usp=sharing'">Item List (Click Here)</button>
+                <a type="button" class="w-100 btn btn-info" href="./Things To Bring.pdf" target="_blank">Item List (Click Here)</a>
                 <p></p>
                 <u>Recomendations For Moving Day</u>
                 <ul>
@@ -264,6 +265,15 @@
     </div>
 
     <script>
+        window.onscroll = function() {ScrollEffectFunction()};
+
+        function ScrollEffectFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("bar").style.width = scrolled + "%";
+        }   
+
         function ToggleMobileNAV()
         {
             var MobileNav = document.getElementById("MobileNav");
@@ -273,7 +283,7 @@
                 MobileNav.style.maxHeight = MobileNav.scrollHeight + "px";
             }
         }
-</script>
+    </script>
 </body>
 
 </html>

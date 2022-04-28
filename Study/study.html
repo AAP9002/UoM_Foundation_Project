@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="../css/site.css" rel="stylesheet" />
+        <link href="./style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Title>Study</Title>
+    </head>
+
+
+
+    <body>
+        <div id="header" class="header">
+            <div class="d-flex">
+                <div class="container w-25 logo">
+                    <img style="height:75px;" src="../Images/Manchester Univerity Logo.png" />
+                </div>
+                <navMenu class="justify-content-center py-3 w-50">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="../Homepage/Index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="../Experience/experience.html" class="nav-link">Experience</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Information</a></li>
+                        <li class="nav-item"><a href="../Study/study.html" class="nav-link active">Study</a></li>
+                        <li class="nav-item"><a href="../Social/social.html" class="nav-link">Social</a></li>
+                        <li class="nav-item"><a href="../Accommodation/accommodation.html" class="nav-link">Accomodation</a></li>
+                    </ul>
+                </navMenu>
+
+                <div style="color: white; vertical-align: baseline;">
+                    <h4> Foundation Computer Science</h4>
+                </div>
+            </div>
+            <toggle>
+                <div>
+                    <div class="w-100 d-flex justify-content-center nav nav-pills">
+                        <button class="btn btn-link nav-link" onclick="ToggleMobileNAV()" type="button" ><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                                Menu</button>
+                            </div>
+                    <div id="MobileNav" class="MobileNav">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item w-100"><a href="../Homepage/Index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item w-100" ><a href="../Experience/experience.html" class="nav-link">Experience</a></li>
+                            <li class="nav-item w-100"><a href="#" class="nav-link">Information</a></li>
+                            <li class="nav-item w-100"><a href="../Study/study.html" class="nav-link active">Study</a></li>
+                            <li class="nav-item w-100"><a href="../Social/social.html" class="nav-link">Social</a></li>
+                            <li class="nav-item w-100"><a href="../Accommodation/accommodation.html" class="nav-link">Accomodation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </toggle>
+        </div>
+
+        <img class="w-100 imageBanner blurBackground"
+            src="../Images/Study/officeStockPhoto.jpg" />
+        <div class="w-100 TextOverlay">
+            <h2 class="u-text--uppercase">Study</h2>
+            <h1>Passing your Foundation Year</h1>
+        </div> 
+        
+        <div class="SectionSelection d-flex">
+            <ul id="topOfSections" style="position:relative;" class="justify-content-center  nav nav-pills SectionSelection">
+            <li class="nav-item"><a href="#Welcome!" class="nav-link">Welcome!</a></li>
+            <li class="nav-item"><a href="#Structure" class="nav-link">Structure</a></li>
+            <li class="nav-item"><a href="#Difficulty" class="nav-link">Difficulty</a></li>
+            <li class="nav-item"><a href="#StudyTips" class="nav-link">Study Tips</a></li>
+            <li class="nav-item"><a href="#Resources" class="nav-link">Resources</a></li>
+        </ul>
+        <div class="progress-bar" style="left:0; bottom:0; position: absolute;" id="bar"></div>
+    </div>
+    <div id="Welcome!" class="container topSection">
+        <h1>Welcome!</h1>
+            <div class="w-30">
+                <splitContainer>
+                    <div>
+                        <strong>
+                            <p>Transitioning from A levels to university can be intimidating, especially with all the pressure put on your studies.
+                                You may feel unsure or confused as to what you’ll have to do in your next year of education, or perhaps you’d like to just get a head start on the game. 
+                                Whatever your reasons, this guide will have you covered with a comprehensive overview of what to expect on the Foundation Year Course.
+                            </p>
+                        </strong>
+                    </div>
+                    <img src="../Images/Study/booksImage.jpg" style="mix-blend-mode: multiply;">
+                </splitContainer>
+            </div>
+    </div>
+    <section id="Structure">
+        <div class="container sections">
+            <div>
+                <h1>Structure</h1>
+                <splitContainer>
+                    <div>
+                        <p>
+                            The foundation year is broken into 12 units and 2 semesters, 6 units per semester. 
+                            Each semester is 12 weeks long, encompassing coursework tests throughout its duration with exams at the end of term. 
+                            Expect to be completing coursework tests approximately every week throughout the course. 
+                            The majority of your grade will be achieved through exam results, though in order to pass you’ll need to keep a 50% average in coursework throughout the year. 
+                            Unlike other courses at UOM, foundation year does not have reading weeks, so don’t base your study schedule off of your peers in first year!
+                        </p>
+                        <p>
+                            In first semester you’ll sit four maths units, two physics/chemistry units (your choice) and two non-traditional units. 
+                            These non-traditional units will focus on skills like group work, presentation skills and academic reading/referencing.
+                            In second semester you’ll sit four maths units, and two group work focused computer science units. 
+
+                        </p>
+                    </div>
+                    <img src="../Images/Study/checkBox.jpg" style="mix-blend-mode: multiply";>
+                </splitContainer>
+            </div>
+        </div>
+    </section>
+    <section id="Difficulty">
+        <div class="container sections">
+            <div>
+                <h1>Difficulty</h1>
+                <splitContainer>
+                    <div>
+                        <p>
+                            Most of the mathematics units will overlook content you may have learnt at A level Maths and Further Maths, however much of this information will be recontextualised and taught slightly differently at the university level. 
+                            Even if you’ve seen and read everything before, what you learn will be contextualised in a broader academic context, which you are unlikely to have learnt at A level. 
+                            If you have never seen this level of maths before, don’t worry! You may find that the level of work required is higher than what you are used to, but it should be manageable with hard work and diligence. 
+                            Even the difficult content is explained thoroughly in the core text, and there will be plenty of synchronous lessons to consolidate your knowledge.
+                        </p>
+                    </div>
+        <img src="../Images/Study/woman.jpg" style="mix-blend-mode: multiply";>
+                </splitContainer>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.onscroll = function() {ScrollEffectFunction()};
+
+        function ScrollEffectFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("bar").style.width = scrolled + "%";
+        }   
+
+        function ToggleMobileNAV()
+        {
+            var MobileNav = document.getElementById("MobileNav");
+            if (MobileNav.style.maxHeight){
+                MobileNav.style.maxHeight = null;
+            } else {
+                MobileNav.style.maxHeight = MobileNav.scrollHeight + "px";
+            }
+        }
+    </script>
+    </body>
+
+
+</html>
