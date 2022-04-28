@@ -215,7 +215,7 @@ privateAccomodationCompany button a{
 /*Zak Specific start*/
 .headed{
     position: fixed;
-    top: 100%;
+    left: 0;
     z-index: 1;
     width: 100%;
     background-color: #f1f1f1;
@@ -228,7 +228,7 @@ privateAccomodationCompany button a{
   
 .progress-bar {
     height: 8px;
-    background: #a504aa;
+    background: #04AA6D;
     width: 0%;
 }
 /*Zak Specific end*/
