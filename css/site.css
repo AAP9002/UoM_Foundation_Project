@@ -252,7 +252,7 @@ privateAccomodationCompany a{
     color: #f6f6f6;
 }
 
-topicsDiv{
+.topicsDiv{
     width: 300px;
     height: 300px;
     position: relative;
@@ -265,7 +265,7 @@ topicsDiv{
     justify-content: center;
 }
 
-topicsDiv img{
+.topicsDiv img{
     width: 300px;
     height: 300px;
     object-fit:cover;
@@ -273,13 +273,14 @@ topicsDiv img{
     position:absolute;
 }
 
-topicsDiv h2{
+.topicsDiv h2{
     text-align: center;
     z-index: 100;
     background-color:azure;
     padding: 10px;
     border-radius: 10px;
     opacity: 80%;
+    color: black;
 }
 
 @media only screen and (max-width: 1120px){
@@ -291,12 +292,12 @@ topicsDiv h2{
 
 @media only screen and (max-width: 990px){
 
-    topicsDiv,topicsDiv img{
+    .topicsDiv,.topicsDiv img{
         width: 200px;
         height: 200px;
     }
 
-    topicsDiv h2{
+    .topicsDiv h2{
         font-size:larger;
     }
 }
@@ -317,7 +318,7 @@ topicsDiv h2{
 
 @media only screen and (max-width: 530px){
 
-    topicsDiv:first-of-type {
+    .topicsDiv:first-of-type {
         display: none;
     }
 }
