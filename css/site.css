@@ -36,10 +36,11 @@ iframe {
     aspect-ratio: 16/9;
 }
 
-captionContent p{ 
+captionContent{ 
     font-style: italic;
     font-size: small;
     color: gray;
+    width: 100%;
 }
 
 .grow { transition: all .2s ease-in-out; }
@@ -187,12 +188,6 @@ splitContainer div{
 
 splitContainer img{
     width: 50%;
-}
-
-splitContainer captionContent{
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 @media only screen and (max-width: 1000px){
