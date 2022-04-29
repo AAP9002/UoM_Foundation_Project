@@ -247,8 +247,7 @@ privateAccomodationCompany a{
     width: 100%;
     border: none;
     outline: none;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
     margin-bottom: 2rem;
     font-size: 1.25rem;
     font-weight: 400;
