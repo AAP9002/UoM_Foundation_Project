@@ -240,10 +240,13 @@ privateAccomodationCompany a{
   width: 0%;
 }
 .collapsible {
-    background-color: rgb(69, 2, 100);
+    color: rgb(69, 2, 100);
+    background-color: rgb(126, 72, 214);
     cursor: pointer;
     padding: 18px;
-    color: var(--theme-text);
+    width: 100%;
+    border: none;
+    outline: none;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
@@ -253,6 +256,7 @@ privateAccomodationCompany a{
     letter-spacing: -.2px;
     margin-top: 0;
 } 
+
   .content {
     padding: 0 18px;
     max-height: 0;
