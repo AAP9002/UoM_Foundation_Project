@@ -256,7 +256,7 @@ privateAccomodationCompany a{
 } 
 
   .content {
-    padding: 0 18px;
+    padding: 0 2px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
