@@ -36,6 +36,12 @@ iframe {
     aspect-ratio: 16/9;
 }
 
+captionContent p{ 
+    font-style: italic;
+    font-size: small;
+    color: gray;
+}
+
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1); }
 /*Shared Site Css end*/
@@ -172,6 +178,7 @@ navMenu{
 
 splitContainer{
     display: flex;
+    position: relative;
 }
 
 splitContainer div{
@@ -180,6 +187,12 @@ splitContainer div{
 
 splitContainer img{
     width: 50%;
+}
+
+splitContainer captionContent{
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 @media only screen and (max-width: 1000px){
