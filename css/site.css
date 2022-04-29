@@ -240,19 +240,11 @@ privateAccomodationCompany a{
   width: 0%;
 }
 .collapsible {
-    background-color: rgb(87, 126, 233);
-    color: rgb(49, 7, 165);
+    background-color: rgb(69, 2, 100);
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
 } 
-  .active, .collapsible:hover {
-    background-color: #ccc;
-}
   .content {
     padding: 0 18px;
     max-height: 0;
