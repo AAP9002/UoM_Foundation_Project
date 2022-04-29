@@ -243,17 +243,16 @@ privateAccomodationCompany a{
     color: rgb(217, 173, 238);
     background-color: rgb(126, 72, 214);
     cursor: pointer;
-    padding: 18px;
+    padding: 6px 12px;
     width: 100%;
-    border: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
     outline: none;
     text-align: left;
-    margin-bottom: 2rem;
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     font-weight: 400;
     line-height: 1.333;
     letter-spacing: -.2px;
-    margin-top: 0;
 } 
 
   .content {
