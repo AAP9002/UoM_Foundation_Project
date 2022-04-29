@@ -243,7 +243,7 @@ privateAccomodationCompany a{
     color: rgb(217, 173, 238);
     background-color: rgb(126, 72, 214);
     cursor: pointer;
-    padding: 6px 12px;
+    padding: 20px 12px;
     width: 100%;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -256,8 +256,9 @@ privateAccomodationCompany a{
 } 
 
   .content {
-    padding: 0 2px;
+    padding: 0 14px;
     max-height: 0;
+    overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
 }
