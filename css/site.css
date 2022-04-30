@@ -158,10 +158,6 @@ navMenu{
 }
 /*Secondary Navbar end*/
 /*Sections of infomation start*/
-faq .sections div{
-    padding: 6px;
-}
-
 .sections h1{
     text-align: center;
 }
@@ -265,6 +261,9 @@ privateAccomodationCompany a{
     letter-spacing: -.2px;
     margin-top: 2;
 
+}
+.sections faq div {
+    padding: 6px;
 }
 
 /*Zak Specific end*/
