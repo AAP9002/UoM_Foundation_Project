@@ -196,15 +196,15 @@ splitContainer img{
 /*Sections of infomation end*/
 
 /*Alan Specific CSS start*/
-privateAccomodationCompany{
+privateAccommodationCompany{
     display:flex;
 }
-privateAccomodationCompany img{
+privateAccommodationCompany img{
     height: 50px;
     width: auto;
     max-width: 180px;
 }
-privateAccomodationCompany a{
+privateAccommodationCompany a{
     margin:20px;
     width: 100px;
 }
