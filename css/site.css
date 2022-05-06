@@ -61,6 +61,13 @@ navMenu{
     flex-wrap: nowrap;
 }
 
+.NavbarSubTitle{
+    color: white;
+    vertical-align: baseline;
+    width: 100%;
+}
+
+
 .NavbarTitleText{
     color: white;
     display:flex;
