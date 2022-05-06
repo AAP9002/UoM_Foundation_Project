@@ -64,7 +64,7 @@ navMenu{
 .NavbarSubTitle{
     color: white;
     vertical-align: baseline;
-    width: 100%;
+    max-width: 23%;
 }
 
 
@@ -82,6 +82,12 @@ navMenu{
 
     navMenu{
         display:none;
+    }
+
+    .NavbarSubTitle{
+        color: white;
+        vertical-align: baseline;
+        max-width: 100%;
     }
 }
 
