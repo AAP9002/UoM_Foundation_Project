@@ -57,7 +57,8 @@ toggle{
     display: none;
 }
 navMenu{
-    min-width: 602px;
+    min-width: 600px;
+    flex-wrap: nowrap;
 }
 
 .NavbarTitleText{
