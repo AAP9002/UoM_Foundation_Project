@@ -49,15 +49,25 @@ captionContent{
 /*top nav bar Start*/
 .header{
     background-color: #6b2c91;
-    padding: 10px;
-    opacity:90%;
+    padding: 5px;
+    padding-left:10px;
+    padding-right: 10px;
+    opacity: 90%;
 }
 
 toggle{
     display: none;
 }
-navMenu{
-    min-width: 600px;
+
+.NavbarSubTitle{
+    color: white;
+    vertical-align: baseline;
+    text-align: end;
+    word-wrap: normal;
+}
+
+nav{
+    align-self: center;
 }
 
 .NavbarTitleText{
@@ -67,13 +77,21 @@ navMenu{
     justify-content: center;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1300px){
     toggle{
         display: block;
     }
 
     navMenu{
         display:none;
+    }
+
+    .NavbarSubTitle{
+        color: white;
+        vertical-align: baseline;
+        max-width: 100%;
+        text-align: start;
+        margin-left: 30px;
     }
 }
 
@@ -86,6 +104,7 @@ navMenu{
 
 .logo{
     min-width: 170px;
+    margin-left: 20px;
 }
 
 .MobileNav{
@@ -227,6 +246,9 @@ privateAccommodationCompany a{
   height: 8px;
   background: #aa04a2;
   width: 0%;
+  left:0;
+  bottom:0;
+  position: absolute;
 }
 .collapsible {
     color: rgb(217, 173, 238);
