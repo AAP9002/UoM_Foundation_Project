@@ -246,6 +246,9 @@ privateAccommodationCompany a{
   height: 8px;
   background: #aa04a2;
   width: 0%;
+  left:0;
+  bottom:0;
+  position: absolute;
 }
 .collapsible {
     color: rgb(217, 173, 238);
