@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="../css/site.css" rel="stylesheet" />
+    <script src="../Scripts/siteScript.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <Title>Homepage</Title>
@@ -25,7 +26,7 @@
                         <li class="nav-item"><a href="../Information/information.html" class="nav-link">Information</a></li>
                         <li class="nav-item"><a href="../Study/study.html" class="nav-link">Study</a></li>
                         <li class="nav-item"><a href="../Social/social.html" class="nav-link">Social</a></li>
-                        <li class="nav-item"><a href="../Accommodation/accommodation.html" class="nav-link">Accomodation</a></li>
+                        <li class="nav-item"><a href="../Accommodation/accommodation.html" class="nav-link">Accommodation</a></li>
                     </ul>
                 </navMenu>
             <div class="NavbarTitleText">
@@ -46,11 +47,11 @@
                 <div id="MobileNav" class="MobileNav">
                     <ul class="nav nav-pills">
                         <li class="nav-item w-100"><a href="./Index.html" class="nav-link active">Home</a></li>
-                        <li class="nav-item w-100" ><a href="../Experience/experience.html" class="nav-link">Experiance</a></li>
+                        <li class="nav-item w-100" ><a href="../Experience/experience.html" class="nav-link">Experience</a></li>
                         <li class="nav-item w-100"><a href="#" class="nav-link">Information</a></li>
                         <li class="nav-item w-100"><a href="../Study/study.html" class="nav-link">Study</a></li>
                         <li class="nav-item w-100"><a href="../Social/social.html" class="nav-link">Social</a></li>
-                        <li class="nav-item w-100"><a href="../Accommodation/accommodation.html" class="nav-link">Accomodation</a></li>
+                        <li class="nav-item w-100"><a href="../Accommodation/accommodation.html" class="nav-link">Accommodation</a></li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +68,7 @@
         <img class="h-100"src="../Images/Homepage Cover.png"/>
         <div class="HomepageTitleText">
             <h1>UOM Computer Science</h1>
-            <h2>with Intergrated Foundation Year</h2>
+            <h2>with Integrated Foundation Year</h2>
             <p>A guide to starting your studies here in Manchester.</p>
         </div>
     </div>
@@ -82,7 +83,7 @@
             <h2>Topics</h2>
         </a>
         <a type="button" class="topicsDiv grow" href="../Experience/experience.html">
-            <img src="https://i.pinimg.com/originals/7c/73/99/7c73991443bb93dac37ee02719cedfae.jpg"/>
+            <img src="../Images/Experience/Cover Image.jpg"/>
             <h2>Experience</h2>
         </a>
         <a type="button" class="topicsDiv grow">
@@ -94,28 +95,16 @@
             <h2>Study</h2>
         </a>
         <a type="button" class="topicsDiv grow" href="../Social/social.html">
-            <img src="https://wallpapercave.com/wp/wp2022807.jpg"/>
+            <img src="../Images/Social/Cover Image.jpg"/>
             <h2>Social</h2>
         </a >
         <a type="button" class="topicsDiv grow" href="../Accommodation/accommodation.html">
                 <img src="../Images/Accomodation/Accomodation Main.jpg"/>
-            <h2>Accomodation</h2>
+            <h2>Accommodation</h2>
         </a>
     </div>
 
     <div id="footer" class="footer d-flex w-100 justify-content-center">
         <p>&copy;2022 - Foundation Year Project - Group F</p>
     </div>
-
-    <script>
-        function ToggleMobileNAV()
-        {
-            var MobileNav = document.getElementById("MobileNav");
-            if (MobileNav.style.maxHeight){
-                MobileNav.style.maxHeight = null;
-            } else {
-                MobileNav.style.maxHeight = MobileNav.scrollHeight + "px";
-            }
-        }
-</script>
 </body>

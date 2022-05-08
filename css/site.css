@@ -36,21 +36,38 @@ iframe {
     aspect-ratio: 16/9;
 }
 
+captionContent{ 
+    font-style: italic;
+    font-size: small;
+    color: gray;
+    width: 100%;
+}
+
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1); }
 /*Shared Site Css end*/
 /*top nav bar Start*/
 .header{
     background-color: #6b2c91;
-    padding: 10px;
-    opacity:90%;
+    padding: 5px;
+    padding-left:10px;
+    padding-right: 10px;
+    opacity: 90%;
 }
 
 toggle{
     display: none;
 }
-navMenu{
-    min-width: 600px;
+
+.NavbarSubTitle{
+    color: white;
+    vertical-align: baseline;
+    text-align: end;
+    word-wrap: normal;
+}
+
+nav{
+    align-self: center;
 }
 
 .NavbarTitleText{
@@ -60,13 +77,21 @@ navMenu{
     justify-content: center;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1300px){
     toggle{
         display: block;
     }
 
     navMenu{
         display:none;
+    }
+
+    .NavbarSubTitle{
+        color: white;
+        vertical-align: baseline;
+        max-width: 100%;
+        text-align: start;
+        margin-left: 30px;
     }
 }
 
@@ -79,6 +104,7 @@ navMenu{
 
 .logo{
     min-width: 170px;
+    margin-left: 20px;
 }
 
 .MobileNav{
@@ -97,6 +123,7 @@ navMenu{
     min-height: 450px;
     box-shadow: 0 3px rgba(0, 0, 0, 0.5);
     object-fit:cover;
+    max-height: 700px;
 }
 
 .blurBackground{
@@ -151,13 +178,6 @@ navMenu{
 }
 /*Secondary Navbar end*/
 /*Sections of infomation start*/
-.sections{
-    scroll-margin-top: 150px;
-    padding: 25px;
-    margin-bottom: 25px;
-    margin-top: 50px;
-}
-
 .sections h1{
     text-align: center;
 }
@@ -172,6 +192,7 @@ navMenu{
 
 splitContainer{
     display: flex;
+    position: relative;
 }
 
 splitContainer div{
@@ -189,20 +210,20 @@ splitContainer img{
     splitContainer div, splitContainer img{
         width: 100%;
     }
-      }
+}
 
 /*Sections of infomation end*/
 
 /*Alan Specific CSS start*/
-privateAccomodationCompany{
+privateAccommodationCompany{
     display:flex;
 }
-privateAccomodationCompany img{
+privateAccommodationCompany img{
     height: 50px;
     width: auto;
     max-width: 180px;
 }
-privateAccomodationCompany a{
+privateAccommodationCompany a{
     margin:20px;
     width: 100px;
 }
@@ -221,11 +242,48 @@ privateAccomodationCompany a{
   height: 8px;
   background: #ccc;
 }
-
 .progress-bar {
   height: 8px;
   background: #aa04a2;
   width: 0%;
+}
+.collapsible {
+    color: rgb(217, 173, 238);
+    background-color: rgb(126, 72, 214);
+    cursor: pointer;
+    padding: 12px 16px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    text-align: left;
+    font-size: 1.45rem;
+    font-weight: 400;
+    line-height: 1.333;
+    letter-spacing: -.2px;
+} 
+
+.content {
+    padding: 0 14px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+.dropText{
+    color: var(--theme-text);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.333;
+    letter-spacing: -.2px;
+    margin-top: 2;
+
+}
+.sections div faq{
+    padding: 25px;
 }
 
 /*Zak Specific end*/
